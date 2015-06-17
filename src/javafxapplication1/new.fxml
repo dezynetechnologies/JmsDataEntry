@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.NewController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+          <MenuBar layoutY="44.0" prefHeight="25.0" prefWidth="700.0">
+            <menus>
+              <Menu mnemonicParsing="false" text="File          ">
+                <items>
+                  <MenuItem mnemonicParsing="false" text="New"  />
+                  <MenuItem mnemonicParsing="false" text="Open" onAction="#handleButtonAction4" />
+                  <Menu mnemonicParsing="false" text="Recent" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save as" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Preferences" />
+                  <MenuItem mnemonicParsing="false" text="Quit"  onAction="#handleButtonAction3" />
+                </items>
+              </Menu>
+              <Menu mnemonicParsing="false" text="View          ">
+                <items>
+                  <MenuItem mnemonicParsing="false" text="Undo" />
+                  <MenuItem mnemonicParsing="false" text="Redo" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="cut" />
+                  <MenuItem mnemonicParsing="false" text="copy" />
+                  <MenuItem mnemonicParsing="false" text="paste" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />  
+                  </items>
+              </Menu>
+              <Menu mnemonicParsing="false" text="Help">
+                <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+                </items>
+              </Menu>
+            </menus>
+          </MenuBar>
+            <Separator layoutY="40.0" prefHeight="6.0" prefWidth="640.0" />
+            <Label alignment="CENTER" layoutY="-1.0" prefHeight="38.0" prefWidth="640.0" text="Judgement System">
+               <font>
+                  <Font name="Calibri" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="88.0" prefHeight="38.0" prefWidth="100.0" text="Bench Code"  >
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox layoutX="137.0" layoutY="95.0" prefWidth="150.0" />
+            <Label layoutX="14.0" layoutY="141.0" prefHeight="38.0" prefWidth="100.0" text="Case Type" >
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox layoutX="137.0" layoutY="148.0" prefWidth="150.0" />
+            
+            <Label layoutX="14.0" layoutY="200.0" prefHeight="38.0" prefWidth="100.0" text="Case Number">
+                <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="138.0" layoutY="200.0" />
+            <Label layoutX="14.0" layoutY="257.0" prefHeight="38.0" prefWidth="100.0" text="Case Year">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="137.0" layoutY="257.0" prefWidth="150.0" />
+            <Label layoutX="14.0" layoutY="320.0" prefHeight="38.0" prefWidth="100.0" text="Category Code">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox layoutX="138.0" layoutY="327.0" prefWidth="150.0" />
+            <Button fx:id="Next" layoutX="386.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleButtonAction1" prefHeight="38.0" prefWidth="79.0" text="Next">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="486.0" layoutY="340.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="79.0" text="Clear"  onAction="#handleButtonAction2" >
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="237.0" fitWidth="297.0" layoutX="326.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@justice%20scales.JPG" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+      </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@BasicApplication.css" />
+  </stylesheets>
+</VBox>
